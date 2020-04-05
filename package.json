@@ -1,0 +1,80 @@
+{
+  "name": "startingpack",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:ts": "tsc && yarn lint:eslint",
+    "lint": "yarn lint:ts",
+    "format": "prettier --write 'src/**/*.{ts,tsx}' && yarn lint:eslint --fix",
+    "format:check": "prettier -c 'src/**/*.{ts,tsx}'",
+    "test:watch": "yarn test --watch",
+    "coverage": "yarn run test --coverage",
+    "storybook": "watch rnstl ./src --wait=100 | storybook start | yarn start --projectRoot storybook --watchFolders $PWD"
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.0",
+    "react-native-config": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react-native": "^5.3.18",
+    "@storybook/react-native-server": "^5.3.18",
+    "@types/jest": "^24.0.24",
+    "@types/react-native": "^0.62.0",
+    "@types/react-test-renderer": "16.9.2",
+    "@types/storybook__react-native": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^2.0.2",
+    "react-dom": "16.11.0",
+    "react-native-storybook-loader": "^1.8.1",
+    "react-native-testing-library": "^1.13.0",
+    "react-test-renderer": "16.11.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    }
+  }
+}

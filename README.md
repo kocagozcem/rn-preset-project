@@ -7,8 +7,13 @@ It's created by following; [Atolye15 crna-recipe](https://github.com/atolye15/cr
 - Storybook
 - Eslint
 - Jest
+- React navigation
 - React native vector icons
 - react-native-i18n
+
+### Hermes (Activated)
+Hermes is an open-source JavaScript engine optimized for running React Native apps on Android. For many apps, enabling Hermes will result in improved start-up time, decreased memory usage, and smaller app size. At this time Hermes is an opt-in React Native feature. <br>
+[More about Hermes](https://reactnative.dev/docs/hermes)
 
 ### To Start Using;
 - Clone the repo;

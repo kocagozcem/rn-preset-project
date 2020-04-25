@@ -1,6 +1,7 @@
 # RN-Preset-Project
 RN-Preset-Project is Ready-to-start configured project for React Native.  <br>
 It's created by following; [Atolye15 crna-recipe](https://github.com/atolye15/crna-recipe)
+#### Current React-Native Version; 0.62
 
 #### Contains; 
 - Typescript
